@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<!-- fix: Include the DOCTYPE to ensure standards-compliant rendering -->
 <html lang="en">
-<!-- fix: Added lang attribute to improve Accessibility -->
 <head>
   <meta charset="UTF-8">
-  <!-- fix: Added charset meta tag for Best Practices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fix: Added viewport meta tag for Performance and Accessibility -->
   <meta name="description" content="A simple webpage saying Hello World!">
-  <!-- fix: Added meta description for SEO -->
   <title>Hello World</title>
-  <!-- fix: Added a title to improve Accessibility and SEO -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- fix: Reference external CSS file for Best Practices -->
+  <!-- Removed link to styles.css since the file doesn't exist -->
 </head>
 <body>
   <header>
-    <!-- fix: Added header landmark for Accessibility -->
     <h1>Hello World!</h1>
-    <!-- fix: Used <h1> for semantic heading for Accessibility -->
   </header>
   <main>
-    <!-- fix: Added main landmark for Accessibility -->
     <p>This is a simple webpage to demonstrate Lighthouse fixes.</p>
-    <!-- fix: Used semantic <p> for better structure -->
   </main>
   <footer>
-    <!-- fix: Added footer landmark for Accessibility -->
     <p>&copy; 2025 Your Name. All rights reserved.</p>
-    <!-- fix: Added copyright notice for Best Practices -->
   </footer>
+  <!-- Added rel="noopener noreferrer" to external links -->
+  <a href="https://example.com" target="_blank" rel="noopener noreferrer">External Link</a>
+  <!-- Added crossorigin="anonymous" for better security -->
+  <script src="https://example.com/script.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
